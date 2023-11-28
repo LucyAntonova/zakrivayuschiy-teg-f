@@ -41,8 +41,6 @@
   background-size: cover;
   background-attachment: fixed;
   font-variation-settings: "wght" var(--page-main-font-weight, 400);
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
 }
 
 .page__header {
