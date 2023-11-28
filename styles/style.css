@@ -1,9 +1,3 @@
-
-.page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-}
-
 .filter-grayscale {
   filter: grayscale(70%);
 }
@@ -29,7 +23,7 @@
 }
 
 .filter-hue-rotate-half {
-  filter:hue-rotate(27deg);
+  filter: hue-rotate(27deg);
 }
 
 .filter-blur {
@@ -37,6 +31,8 @@
 }
 
 .page {
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
   padding-block-start: 100px;
   color: var(--text-color, #000000);
   font-family: var(--page-main-font-family, "Inter", sans-serif);
@@ -345,12 +341,10 @@
 }
 
 @supports (
-  (-webkit-text-stroke: 0.5px var(--page-background-color, #ffffff)) or
-    (text-stroke: 0.5px var(--page-background-color, #ffffff))
+  (-webkit-text-stroke: 0.5px var(--page-background-color, #ffffff))
 ) {
   .card__img-label {
     text-shadow: none;
     -webkit-text-stroke: 0.5px var(--page-background-color, #ffffff);
-    text-stroke: 0.5px var(--page-background-color, #ffffff);
   }
 }
